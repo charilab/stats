@@ -1,5 +1,7 @@
+const BASE_URL="/data";
+
 var cycleroute = L.geoJsonDynamic({
-        jsonUrl: "/data/bicycleroute.json",
+        jsonUrl: BASE_URL+"/bicycleroute.json",
         reload: false,
         limit: null,
         pointToLayer: function(point, latlng) {
@@ -16,7 +18,7 @@ var cycleroute = L.geoJsonDynamic({
     });
 
 var bicycle = L.geoJsonDynamic({
-        jsonUrl: "/data/bicycle.json",
+        jsonUrl: BASE_URL+"/bicycle.json",
         reload: false,
         limit: null,
         pointToLayer: function(point, latlng) {
@@ -33,7 +35,7 @@ var bicycle = L.geoJsonDynamic({
     });
 
 var cycleway = L.geoJsonDynamic({
-        jsonUrl: "/data/cycleway.json",
+        jsonUrl: BASE_URL+"/cycleway.json",
         reload: false,
         limit: null,
         pointToLayer: function(point, latlng) {
@@ -50,7 +52,7 @@ var cycleway = L.geoJsonDynamic({
     });
 
 var cyclelane = L.geoJsonDynamic({
-        jsonUrl: "/data/cyclelane.json",
+        jsonUrl: BASE_URL+"/cyclelane.json",
         reload: false,
         limit: null,
         pointToLayer: function(point, latlng) {
@@ -67,7 +69,7 @@ var cyclelane = L.geoJsonDynamic({
     });
 
 var nobicycle = L.geoJsonDynamic({
-        jsonUrl: "/data/nobicycle.json",
+        jsonUrl: BASE_URL+"/nobicycle.json",
         reload: false,
         limit: null,
         pointToLayer: function(point, latlng) {
